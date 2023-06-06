@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- Files -->
+    <link rel="stylesheet" href="style.css" />
+    <script>
+            $(document).ready(function() {
+            $(".option").click(function() {
+                $(".option").removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+    </script>
+    <title>Discover the continents</title>
+  </head>
+  <body>
+    <div class="options">
+      <div
+        class="option active"
+        style="--optionBackground: url(Assets/japan.jpg)">
+        <div class="shadow"></div>
+        <div class="label">
+          <div class="icon">
+            <i class="fas fa-walking"></i>
+          </div>
+          <div class="info">
+            <div class="main">Asia</div>
+            <div class="sub">Temples in the mountains</div>
+          </div>
+        </div>
+      </div>
+      <div
+      class="option"
+      style="--optionBackground: url(Assets/egipt.jpg)">
+
+        <div class="shadow"></div>
+        <div class="label">
+          <div class="icon">
+            <i class="fas fa-snowflake"></i>
+          </div>
+          <div class="info">
+            <div class="main">Africa</div>
+            <div class="sub">Monuments and history</div>
+          </div>
+        </div>
+      </div>
+      <div
+      class="option"
+      style="--optionBackground: url(Assets/norway.jpg)">
+
+        <div class="shadow"></div>
+        <div class="label">
+          <div class="icon">
+            <i class="fas fa-tree"></i>
+          </div>
+          <div class="info">
+            <div class="main">Europe</div>
+            <div class="sub">Norway´s Beautiful village</div>
+          </div>
+        </div>
+      </div>
+      <div
+      class="option"
+      style="--optionBackground: url(Assets/oceania.jpg)">
+
+        <div class="shadow"></div>
+        <div class="label">
+          <div class="icon">
+            <i class="fas fa-tint"></i>
+          </div>
+          <div class="info">
+            <div class="main">Oceania</div>
+            <div class="sub">Amazing Beaches</div>
+          </div>
+        </div>
+      </div>
+      <div
+      class="option"
+      style="--optionBackground: url(Assets/brazil.jpg)">
+
+        <div class="shadow"></div>
+        <div class="label">
+          <div class="icon">
+            <i class="fas fa-sun"></i>
+          </div>
+          <div class="info">
+            <div class="main">America</div>
+            <div class="sub">Brazil´s Carnaval</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
